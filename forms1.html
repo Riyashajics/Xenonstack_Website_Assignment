@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>FORM1</title>
+    <style>
+        fieldset
+        {
+            margin-left: 20px;
+            padding: 20px 20px 20px 40px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            margin-left: 30px;
+            background:url("9.jpg") ;
+            background-position: center;
+            background-size: cover;
+            color:blanchedalmond;
+            /*display: grid;
+            /*float: right;*/
+            
+        }
+      
+        input{
+           margin-bottom: 20px;
+        }
+       select{
+           margin-bottom: 20px;
+       }
+       button{
+           margin-top: 20px;
+       }
+    </style>
+    </head>
+    <body>
+        <fieldset>
+            
+            <label for="fname">FIRST NAME:</label><br>
+            <input type="text" id="fname" name="fname" required><br>
+            <label>
+                LAST NAME:<br>
+
+                <input type="text" name="LAST NAME" ><br>
+            </label>
+            <label>
+                EMAIL ADDRESS:<br>
+                <input type="email" name="email"
+                placeholder="name@domain.com" required><br>
+            </label>
+           <label>
+               PASSWORD:<br>
+               <input type="password" name="password" required><br>
+           </label>
+            <label>
+                   BIRTHDATE:<br>
+                   <input type="date" name="bday"><br>
+            </label>
+            <label>
+                GENDER:<br>
+             <br>   <input type="radio" name=gender value="Male" checked>MALE
+                <br> <input type="radio" name=gender value="Female" checked> FEMLAE
+            </label><br>
+            <label>
+                PLEASE SELECT:<br>
+                <input type="checkbox" name=member value="Be a Member"> Be a Member
+                <input type="checkbox" name=try vaalue="Free Trial"> Free Trial
+                <input type="checkbox" name=member1 value="subscribe">Subscribe<br>
+            </label> 
+           <select yourpackage="package"><br>
+
+               <option value="300 per month" selected>300 per month</option><br>
+                <option value="400 per month">400 per month</option>
+            </select><br>
+            <textarea name=" " placeholder="Write your Comments"></textarea><br>
+            <input type="file" name="file">
+            <button name="Submit">
+            <strong> Login </strong>
+            </button>
+
+           
+        </fielset>
+    </body>
+</html>

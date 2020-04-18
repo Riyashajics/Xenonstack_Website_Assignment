@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Detailed positioning
+        </title>
+        <style>
+            .box-set
+            {
+                background: grey;
+                overflow: auto;
+            }
+            .box{
+                background: rgb(114, 34, 34);
+                color: cornsilk;
+                float: left;
+                margin: 1.5%;
+                width:29%;
+                padding: 1%;
+                box-shadow: 0 15px 50px yellow;
+              
+            }
+            .box-set:before,
+            .box-set::after{
+                content: "";
+                display: table;
+            }
+            .box-set:after{
+                clear: both;
+            }
+            .box-set{
+                *zoom:1;
+            }
+            .box:nth-child(2)
+            {
+                position: relative;
+                top:20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box-set">
+            <figure class="box">BOX1</figure>
+            <figure class="box">BOX2</figure>
+            <figure class="box">BOX3</figure>
+        </div>
+    </body>
+</html>

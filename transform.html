@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<htm>
+    <head>
+        <title>
+            transformations
+        </title>
+        <style>
+            div{
+                width:120px;
+                height:120px;
+                background: darkred;
+                color:ghostwhite;
+                text-align: center;
+                padding: 20px;
+                transition:width 2s,height 2s,transform 2s;
+            }
+            div:hover{
+                width:420px;
+                height:420px;
+                transform:rotate(180deg);
+
+
+            }
+            .box{
+                height:120px;
+                width:120px;
+                background: gold;
+                transition-property:background,border-radius;
+                transition-duration: 1s;
+                transition-timing-function: linear;
+            }
+            .box:hover{
+                background: grey;
+                border-radius: 50%;
+            }
+            .box2{
+                height:120px;
+                width: 120px;
+                background: indianred;
+                -ms-transform: skewY(20deg);
+                transform:skewY(20deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="1">
+       
+        </div>
+        <figure class="box"></figure><br>
+        <figure class="box2"></figure>
+    </body>
+</htm>

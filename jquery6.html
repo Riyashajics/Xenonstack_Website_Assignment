@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#slide").click(function(){
+    $("#pannel").slideToggle("slow");
+    });
+});
+</script>
+<style>
+#slide,#pannel
+{
+    padding:5px;
+    text-align: center;
+    background-color: coral;
+    font-family: Arial, Helvetica, sans-serif;
+    border:solid 2px  black ;
+}
+#pannel
+{
+   padding:50px;
+    display: none;
+}
+    
+</style>
+</head>
+<body>
+<div id="slide"> click me</div>
+<div id="pannel"> HELLO EVERYONE </div>
+
+
+
+
+</body>
+</html>

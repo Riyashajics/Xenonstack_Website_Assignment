@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .navigation ul{
+                font:bold 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+                text-transform: uppercase;
+                color:indigo;
+                margin: 0;
+                padding: 0;
+             }
+             .navigation li{
+                 display: inline;
+
+             }
+             .navigation a{
+               background:red;
+               background:linear-gradient(yellow,orange);
+               border-right: 2px solid tomato;
+               color:blue;
+               padding: 40px 50px;
+               text-decoration: none;
+            }
+            .navigation a:hover{
+                background:cyan;
+                box-shadow: 0 0 10px 1px grey;
+            }
+            .navigation li:first-child a{
+                border-radius: 4px 0 0 4px;
+                
+            }
+            .navigation li:last-child a{
+                border-radius:  0 4px 4px 0;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navigation">
+            <ul>
+            <li><a href="#"> home</a></li>
+            <li><a href="#">setting</a></li>
+            <li><a href="#">about</a></li>
+           
+        </ul>
+        </nav>
+    </body>
+</html>

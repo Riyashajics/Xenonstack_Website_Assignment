@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            ANIMATIONS
+        </title>
+        <style>
+            body{
+                background: coral;
+            }
+            .box-1
+            {
+                background: darkblue;
+                width: 200px;
+                height: 200px;
+                position: relative;
+               
+
+
+            }
+            .one:hover .box-1{
+                animation-name: myanimation;
+                animation-duration: 2s;
+                animation-iteration-count:infinite;
+            }
+            .one:active .box-1{
+                animation-play-state: paused;
+            }
+
+        
+            @keyframes myanimation {
+                0% { background-color:tomato; left:0px;top:0px;border-radius: 0 0 0 0;}
+                25% {background-color: darkkhaki;left:200px;top:0px;border-radius: 0 0 0 50%;}
+                50%{background-color: darksalmon;left:200px;top:200px;border-radius: 0 0 50% 50%;}
+                75%{background-color: hotpink;left:0px;top:200px;border-radius: 0 50% 50% 50% ;}
+                100%{background-color: yellow;left:0px;top:0;border-radius: 50% 50% 50% 50%;}
+                
+            }
+            
+            }
+           
+        </style>
+    </head>
+    <body>
+        <div class=one>
+        <figure class="box-1"></figure>
+        </div>
+    </body>
+</html>

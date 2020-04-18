@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQUERY</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('span').hide();
+             /*   $('button').dblclick(function(){
+                    $('p').toggle(1000)*/
+                    $('input').focusin(function(){
+                         
+                         $('#one').show().fadeOut(3000);
+                    
+
+                });
+                $('input').focusout(function(){
+                    $('#one').hide();
+                    $('#two').show().fadeOut(3000);
+               
+
+           });
+                $('#three').on({
+                    mouseenter:function(){
+                        $(this).css('backgroundColor','red');
+                    },
+                    mouseleave:function(){
+                        $(this).css('backgroundColor','yellow');
+                    },
+                    click:function(){
+                        alert("heyyyyy");
+                    }
+                });
+                $('#six').click(function(){
+                    $('ol').append('<li> four </li>');
+                   
+                });
+                $('#seven').click(function(){
+                    $('div').empty();
+                });
+                $('#twelve').click(function(){
+                    $("#eight,#nine,#ten").addClass("red");
+                    $("#eleven").addClass("next");
+                })
+            });
+        </script>
+        <style>
+            div{
+                background:tomato;
+                color:white;
+                width: 100%;
+                margin: 40px;
+                padding:10px;
+               
+                
+            }
+            
+       
+        .red{
+            color:red;
+        }
+        .next{
+            font-size:xx-large;
+            font-weight:bold;
+        }
+    </style>
+    </head>
+    <body>
+        <input type="text" name="">
+        <p>hello hide me!</p>
+        <span id="one">welcome</span>
+        <span id="two">take care</span>
+        <p id="three">hello how are you</p>
+        <ol>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ol>
+        <button id="six">ADD</button>
+        <div>
+            this is a long para "wertyujidbuxydvbcuydbcijnd">xytdgvxuydvsbcidb
+                tyvxyuxbubxjsn xlk
+                ytxvuybxuxnxbiuhxyvxbiubxnxsnxnslkx
+            </div>
+        <button id="seven"> delete this</button>
+        <p id="eight"> my name is </p>
+        <p id="nine"> Riya </p>
+        <p id="ten"> shaaji </p>
+        <p id="eleven">hoooooo</p>
+        <button id="twelve">Add classes</button>
+
+
+
+        
+    </body>
+</html>

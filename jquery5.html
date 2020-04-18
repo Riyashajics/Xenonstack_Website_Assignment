@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#fadein").click(function(){
+        $("#box1").fadeIn();
+    });
+    $("#fadeout").click(function(){
+        $("#box2").fadeOut();
+    });
+    $("#fadeout").click(function(){
+        $("#box2").fadeToggle();
+    });
+});
+
+
+
+
+</script>
+</head>
+<body>
+
+<p>see the fading effect</p>
+<button id="fadein"> fade in</button>
+<button id="fadeout"> fade out</button>
+<button id="fadetoggle"> fade toggle</button>
+<div id="box1" style="height:80px;width:80px;background-color:red;"></div><br>
+<div id="box2"style="height:80px;width:80px;background-color:pink;"></div><br>
+<div id="box3"style="height:80px;width:80px;background-color:tomato;"></div><br>
+</body>
+</html>

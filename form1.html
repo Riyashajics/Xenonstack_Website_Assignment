@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> form </title>
+        <style>
+            *,
+                *:before,
+                *:after {
+   box-sizing: border-box;
+                }
+                form{
+                    border: 3px solid rgb(27, 2, 71);
+                    border-radius: 13px;
+                    font: 15px bold sans-serif;
+                    overflow: hidden;
+                    width: 300px;
+
+                }
+                fieldset
+                {
+                    border:0;
+                    margin: 0;
+                    padding:0;
+                    display: flex;
+                }
+                input{
+                    border-radius: 5px;
+                    margin-left: 90px;
+                }
+                .info
+                {
+                    padding: 20 20 0 20;
+                }
+                .info label
+                {
+                    color:crimson;
+                    font-weight:bold;
+                    font-size: 25px;
+                    display: block;
+                    margin-bottom: 80px;
+                    margin-left: 15px;
+                    margin-top: 10px;
+
+                }
+                .info input
+                {
+                    background: whitesmoke;
+                    border: 2px solid blue;
+                }
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset class="info">
+                <label>
+                    username:
+                    <input type="text" name="username">
+                </label>
+                <label>
+                    password:
+                    <input type="password" name="password"
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>
+                    SUBMIT
+                <input type="button" name="buttom1" value="submit"> 
+                </label>
+                <label>
+                    <input type="checkbox" name="chk1">Stay signed in
+                </label>
+            </fieldset>
+        </form>
+    </body>
+</html>

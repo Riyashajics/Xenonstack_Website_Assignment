@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            FLEXIBLE GRIDS
+        </title>
+        <style>
+            body{
+                color:wheat;
+                font:italic bold 14px "arial";
+
+
+            }
+            .container:before,
+            .container:after{
+                content:"";
+                display:table;
+
+            }
+            .container:after{
+                clear: both;
+            }
+            .container
+            {
+                background:rgb(156, 155, 151);
+                width: 520px;
+               
+                *zoom: 1;
+               
+
+            }
+            .container,aside,section{
+                border-radius: 6px;
+            }
+            section{
+                float:left;
+                width:320px;
+            }
+            aside{
+                float:right;
+                width:130px;
+            }
+            section,aside
+            {
+                background: yellow;
+                margin:10px;
+                padding:20px 0;
+                text-align: center;
+            }
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <section> section</section>
+            <aside>  aside </aside>
+        </div>
+
+    </body>
+</html>
